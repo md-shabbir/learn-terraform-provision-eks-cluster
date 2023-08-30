@@ -80,11 +80,11 @@ module "eks" {
     two = {
       name = "node-group-2"
 
-      instance_types = ["t3.small"]
+      instance_types = ["p4d.24xlarge"]
 
       min_size     = 1
-      max_size     = 2
-      desired_size = 1
+      max_size     = 5
+      desired_size = 2
     }
   }
 }
